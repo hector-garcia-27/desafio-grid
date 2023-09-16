@@ -3,16 +3,89 @@
     padding: 0;
 }
 
-header {
-    background-color: blue;
-    color: white;
-    text-align: center;
-    padding: 20px;
+.cajon {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-template-areas:
+    "sup sup"
+    "menu grilla"
+    "pie pie"
 }
 
-footer {
-    background-color: blue;
+.cajon .box {
+    border: solid 1px black;
+}
+
+.navbar {
+    grid-area: sup;
+    background-color: #ff933a;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
+}
+
+.asidebar {
+    grid-area: menu;
+    min-height: 60vh;
+    text-align: center;
+}
+
+.asidebar h3 {
+    padding: 10px;
+}
+
+.asidebar .categoria {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.categoria :hover {
+    background-color: #ffc18f;
+}
+
+.asidebar .categoria .text {
+    display: flex;
+}
+
+.grilla {
+    grid-area: grilla;
+    background-color: #e7e6e6;
+}
+
+.grilla .card {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.grilla .card .tarjeta {
+    border-radius: 10px;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    background-color: white;
+}
+
+.grilla .card .tarjeta button {
+    width: 100%;
+    background-color: #ff933a;
+    color: white;
+    border-radius: 5px;
+}
+
+.grilla .card .tarjeta img {
+    max-width: 250px;
+    border-radius: 5px;
+}
+.pie {
+    grid-area: pie;
+    text-align: center;
+    background-color: rgb(29, 43, 72);
+    color: white;
+    padding: 10px;
 }

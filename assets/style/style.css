@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family:  'Open Sans', sans-serif;
 }
 
 .cajon {
@@ -12,9 +15,9 @@
     "pie pie"
 }
 
-.cajon .box {
+/* .cajon .box {
     border: solid 1px black;
-}
+} */
 
 .navbar {
     grid-area: sup;
@@ -26,7 +29,7 @@
 
 .asidebar {
     grid-area: menu;
-    min-height: 60vh;
+    min-height: 80vh;
     text-align: center;
 }
 
@@ -41,13 +44,17 @@
 }
 
 .categoria :hover {
-    background-color: #ffc18f;
+    color: blue;
 }
 
 .asidebar .categoria .text {
     display: flex;
 }
 
+.asidebar .categoria .text p {
+    padding-left: 5px;
+    color: rgb(100, 100, 100);
+}
 .grilla {
     grid-area: grilla;
     background-color: #e7e6e6;
@@ -68,7 +75,11 @@
     text-align: center;
     align-items: center;
     padding: 5px;
-    background-color: white;
+    background-color: white;    
+}
+
+.grilla .card .tarjeta p{
+    padding-bottom: 20px;
 }
 
 .grilla .card .tarjeta button {
